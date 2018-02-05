@@ -1,0 +1,4 @@
+
+* for sim_real and related - allow conditional distributions (i.e. dependence between the
+  modulus and the argument)
+  

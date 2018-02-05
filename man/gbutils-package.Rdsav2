@@ -1,0 +1,61 @@
+\name{gbutils-package}
+\alias{gbutils-package}
+\alias{gbutils}
+\docType{package}
+\title{
+  Simulation of Real and Complex Numbers and Small Programming Utilities
+}
+\description{
+  Simulate real and complex numbers from distributions of
+       their magnitude and arguments. Optionally, the magnitudes and/or
+       arguments may be fixed in almost arbitrary ways.  Small
+       programming utilities: check if an object is identical to NA,
+       count positional arguments in a call, set intersection of more
+       than two sets, check if an argument is unnamed.
+}
+\details{
+   \tabular{ll}{
+   Package:  \tab gbutils\cr
+   Type:     \tab Package\cr
+   Version:  \tab 0.2-0 \cr
+   Date:     \tab 2016-01-05\cr
+   License:  \tab GPL (>=2)\cr
+   }
+
+   Index:
+  \preformatted{gbutils-package         Simulation of Real and Complex Numbers and
+                        Small Programming Utilities
+isNA                    Check if an object is NA
+isargunnamed            Is an element of a list named?
+mintersect              Set intersection of arbitrary number of
+                        arguments
+myouter                 Functions for some basic operations
+nposargs                Function to count the number of positional
+                        arguments used in a call
+parse_text              Parse expressions residing in character vectors
+raw_history             Get the command history
+sim_complex             Simulate real or complex numbers using polar
+                        form
+sim_numbers             Simulation based on polar form specifications}
+
+% ~~ An overview of how to use the package, including the most important ~~
+% ~~ functions ~~
+}
+\author{
+  Georgi N. Boshnakov
+
+Maintainer: Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>
+}
+% \references{
+% % bibentry:all
+% }
+% ~~ Optionally other standard keywords, one per line, from file KEYWORDS in ~~
+% ~~ the R documentation directory ~~
+\keyword{ package }
+% \seealso{
+% ~~ Optional links to other man pages, e.g. ~~
+% ~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+% }
+% \examples{
+% ~~ simple examples of the most important functions ~~
+% }
