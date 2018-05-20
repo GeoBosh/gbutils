@@ -1,8 +1,8 @@
 Package: gbutils
 Type: Package
 Title: Simulation of Real and Complex Numbers and Small Programming Utilities
-Version: 0.2-2
-Date: 2017-10-05
+Version: 0.2-3
+Date: 2018-05-20
 Author: Georgi N. Boshnakov
 Depends: methods
 Imports: stats, utils

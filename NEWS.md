@@ -1,10 +1,14 @@
-Changes in Version 0.2-2
+# Changes in Version 0.2-3
+
+   -
+
+
+# Changes in Version 0.2-2
 
    - corrected a couple of typo's in the vignette.
 
 
-
-Changes in Version 0.2-1
+# Changes in Version 0.2-1 (CRAN)
 
    - New function missing_arg() returns TRUE if an element of a pairlist is
      missing.
@@ -18,6 +22,6 @@ Changes in Version 0.2-1
    - A vignette illustrates plotpdf().
 
 
-Changes in Version 0.2-0
+# Changes in Version 0.2-0 (CRAN)
 
    - First CRAN version

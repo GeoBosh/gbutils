@@ -1,0 +1,26 @@
+#+PROPERTY: header-args:R   :cache yes :session readme-r :results value :exports both
+#+OPTIONS: toc:nil
+
+Simulate real and complex numbers from distributions of their magnitude and
+arguments. Optionally, the magnitudes and/or arguments may be fixed in almost arbitrary
+ways. Plot density and distribution functions with automatic selection of suitable regions.
+Small programming utilities: check if an object is identical to NA, count positional
+arguments in a call, set intersection of more than two sets, check if an argument is unnamed.
+
+* Installing gbutils
+
+The [[https://cran.r-project.org/package=gbutils][latest stable version]] is on CRAN. 
+#+BEGIN_EXAMPLE
+install_packages("gbutils")
+#+END_EXAMPLE
+# The vignette shipping with the package gives illustrative examples.
+# =vignette("Guide_gbutils", package = "gbutils")=.
+
+
+You can install the [[https://github.com/GeoBosh/gbutils][development version]] of =gbutils= from Github:
+#+BEGIN_EXAMPLE
+library(devtools)
+install_github("GeoBosh/gbutils")
+#+END_EXAMPLE
+
+
