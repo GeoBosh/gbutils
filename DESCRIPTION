@@ -15,6 +15,8 @@ Description: Simulate real and complex numbers from distributions of their
        utilities: check if an object is identical to NA, count positional
        arguments in a call, set intersection of more than two sets, check if an
        argument is unnamed.
+URL: https://github.com/GeoBosh/gbutils
+BugReports: https://github.com/GeoBosh/gbutils/issues
 License: GPL (>=2)
 Collate: parse_text.R sim_numbers.R isNA.R mintersect.R pad.R args.R
          history.R cdf2qf.R

@@ -1,8 +1,8 @@
 # Changes in Version 0.2-3
 
-- add `README.*`mm.
-- add website created with 'pkgdown'.
-
+- created `README.*`mm.
+- added website created with 'pkgdown'.
+- added github URL to DESCRIPTION.
 
 # Changes in Version 0.2-2
 
