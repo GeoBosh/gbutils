@@ -21,3 +21,4 @@ BugReports: https://github.com/GeoBosh/gbutils/issues
 License: GPL (>=2)
 Collate: parse_text.R sim_numbers.R isNA.R mintersect.R pad.R args.R
          history.R cdf2qf.R S4utils.R
+RoxygenNote: 6.0.1

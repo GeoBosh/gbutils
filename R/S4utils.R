@@ -19,6 +19,9 @@ adjacencyOfClasses <- function(packages, externalSubclasses = FALSE,
                                Wolfram = FALSE){
     if(!is.character(packages))
         stop("argument 'packages' must be a character vector of names of one or more packages")
+    ## !!! TODO: 'requireNamespace' may have to be changed to 'require',
+    ##     since in some cases S4 classes do not become visible.
+    ##     Example: 'stats4' (maybe that's the only one, since it does wicked things with base R functions)
     flags <- sapply(packages, function(pkg) !requireNamespace(pkg))
     if(any(flags))
         stop("one or more of the requested packages is not available")

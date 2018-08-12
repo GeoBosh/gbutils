@@ -4,3 +4,5 @@
 ^TAGS$
 ^auto$
 /auto$
+^_pkgdown\.yml$
+^docs$
