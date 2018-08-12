@@ -27,7 +27,8 @@ export(
     sim_numbers,
     sim_real,
     cdf2quantile,
-    plotpdf
+    plotpdf,
+    adjacencyOfClasses
     )
 
 

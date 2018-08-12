@@ -1,10 +1,11 @@
 Package: gbutils
 Type: Package
 Title: Simulation of Real and Complex Numbers and Small Programming Utilities
-Version: 0.2-3
-Date: 2018-05-20
+Version: 0.3-1
+Date: 2018-08-12
 Depends: methods
-Imports: stats, utils
+Imports: stats, utils, Rdpack (>= 0.9)
+RdMacros: Rdpack
 Authors@R: person(given = c("Georgi", "N."), family = "Boshnakov",
                   role = c("aut", "cre"), 
                   email = "georgi.boshnakov@manchester.ac.uk")
@@ -14,9 +15,9 @@ Description: Simulate real and complex numbers from distributions of their
        functions with automatic selection of suitable regions.  Small programming
        utilities: check if an object is identical to NA, count positional
        arguments in a call, set intersection of more than two sets, check if an
-       argument is unnamed.
+       argument is unnamed, compute the graph of S4 classes in packages.
 URL: https://github.com/GeoBosh/gbutils https://geobosh.github.io/gbutils/
 BugReports: https://github.com/GeoBosh/gbutils/issues
 License: GPL (>=2)
 Collate: parse_text.R sim_numbers.R isNA.R mintersect.R pad.R args.R
-         history.R cdf2qf.R
+         history.R cdf2qf.R S4utils.R

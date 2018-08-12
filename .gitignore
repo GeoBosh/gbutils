@@ -1,4 +1,11 @@
-countr/build/
+/vignettes/.RData
+/vignettes/auto/
+/auto/
+/R/all.ps
+/revdep/
+/Org/
+/.RData
+/.Rhistory
 
 ## Emacs
 .emacs.desktop

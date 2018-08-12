@@ -1,3 +1,4 @@
+^README[.]org
 ^docs/
 [.]emacs[.]desktop.*
 ^TAGS$
