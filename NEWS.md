@@ -1,3 +1,9 @@
+# Changes in Version 0.3-1
+
+- new function `pseudoInverse()` (moved here from package mixAR).
+
+
+
 # Changes in Version 0.2-4 - 0.3.0 (CRAN)
 
 - new function `adjacencyOfClasses()` gives the graph of the classes defined in
