@@ -2,7 +2,7 @@ Package: gbutils
 Type: Package
 Title: Simulation of Real and Complex Numbers and Small Programming Utilities
 Version: 0.3-1
-Date: 2018-08-12
+Date: 2018-10-04
 Depends: methods
 Imports: stats, utils, Rdpack (>= 0.9)
 RdMacros: Rdpack
@@ -19,6 +19,7 @@ Description: Simulate real and complex numbers from distributions of their
 URL: https://github.com/GeoBosh/gbutils https://geobosh.github.io/gbutils/
 BugReports: https://github.com/GeoBosh/gbutils/issues
 License: GPL (>=2)
+Encoding: UTF-8
 Collate: parse_text.R sim_numbers.R isNA.R mintersect.R pad.R args.R
          history.R cdf2qf.R S4utils.R pseudoInverse.R
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0

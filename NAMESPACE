@@ -1,10 +1,11 @@
 import(methods)
-importFrom("stats", "rbinom", "runif", "uniroot")
-importFrom("utils", "savehistory")
-importFrom("graphics", "plot")
+importFrom(stats, rbinom, runif, uniroot)
+importFrom(utils, savehistory)
+importFrom(graphics, plot)
+importFrom(Rdpack, reprompt)
 
 exportMethods(
-    "pad"
+    pad
     # todo: is it necessary to export also methods for "pad<-"?
 )
 exportClassPattern("objectPad")
