@@ -1,10 +1,11 @@
 Package: gbutils
 Type: Package
 Title: Simulation of Real and Complex Numbers and Small Programming Utilities
-Version: 0.3-1
-Date: 2018-10-04
+Version: 0.4-1
+Date: 2018-10-05
 Depends: methods
 Imports: stats, utils, Rdpack (>= 0.9)
+Suggests: classGraph, graph, Rgraphviz
 RdMacros: Rdpack
 Authors@R: person(given = c("Georgi", "N."), family = "Boshnakov",
                   role = c("aut", "cre"), 

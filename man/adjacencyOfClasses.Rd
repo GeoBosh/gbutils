@@ -12,7 +12,7 @@ adjacencyOfClasses(packages, externalSubclasses = FALSE,
 \arguments{
   \item{packages}{names of one or more packages, a character vector}
   \item{externalSubclasses}{
-    if \code{TRUE} exclude subtrees of classes not defined in any of the
+    if \code{TRUE}, exclude subtrees of classes not defined in any of the
     packages listed in argument \code{packages}.
   }
   \item{result}{
@@ -69,15 +69,15 @@ adjacencyOfClasses(packages, externalSubclasses = FALSE,
   If \code{result} is \code{"matrixOfPairs"}, the edges of the
   graph are represented by a character matrix with two columns, where each row 
   represents an edge from the element in the first column to the element
-  in the second. In this example there is ne edge, so the matrix
+  in the second. In this example there is one edge, so the matrix
   contains one row:
   
   \printExample{adjacencyOfClasses("gbutils", result = "matrixOfPairs")}
   
   If \code{result} is \code{"adjacencyMatrix"}, the adjacency matrix of
   the graph is in component "AM" of the returned list. Element \eqn{(i,j)} of
-  this matrix is equal to one, if the \eqn{j}{j-}th class is superclass
-  to the \eqn{i}{i-}th. In other words, the \eqn{i}{i-}th gives the
+  this matrix is equal to one, if the \eqn{j}{j-}th class is a superclass
+  to the \eqn{i}{i-}th. In other words, the \eqn{j}{j-}th column gives the
   superclasses of the \eqn{i}{i-}th class. Here the element in position
   (1,2) is non-zero, so \code{"list"} is the superclass of \code{"objectPad"}:
 
@@ -102,8 +102,10 @@ adjacencyOfClasses(packages, externalSubclasses = FALSE,
 
   \printExample{adjacencyOfClasses("gbutils", Wolfram = TRUE)}
 
-  Setting \code{result = "adjacencyMatrix"} in the last \R command would
-  export a graph based on its adjacency matrix. 
+  Setting \code{result = "adjacencyMatrix"} in the last \R command
+  exports the graph in terms of its adjacency matrix:
+
+  \printExample{adjacencyOfClasses("gbutils", Wolfram = TRUE, result = "adjacencyMatrix")}
 
 }
 \value{
@@ -115,9 +117,13 @@ adjacencyOfClasses(packages, externalSubclasses = FALSE,
   \item{AM}{the adjacency matrix of the graph (present only when
     \code{result} is \code{"adjacencyMatrix"}).}
 }
-%\references{
-%%% ~put references to the literature/web site here ~
-%}
+\references{
+  \insertRef{Rpackage:graph}{gbutils}
+
+  \insertRef{Rpackage:Rgraphviz}{gbutils}
+
+  \insertRef{Rpackage:classGraph}{gbutils}
+}
 \author{Georgi N. Boshnakov}
 %\note{
 %%%  ~~further notes~~
@@ -126,7 +132,13 @@ adjacencyOfClasses(packages, externalSubclasses = FALSE,
 %%% ~Make other sections like Warning with \section{Warning }{....} ~
 %
 \seealso{
-  \code{?methods::classesToAM} which is used for the main computation here
+  \code{?methods::classesToAM} which is used for the main computation
+  here,
+
+  \insertCiteOnly{Rpackage:classGraph;textual}{gbutils} for a suite of related functions.
+  \insertCiteOnly{Rpackage:graph;textual}{gbutils} for creation and manipulation of
+  graphs, and \insertCiteOnly{Rpackage:Rgraphviz;textual}{gbutils} for
+  visualisation of graphs.
 }
 \examples{
 adjacencyOfClasses("gbutils")
@@ -146,9 +158,19 @@ adjacencyOfClasses("gbutils", TRUE, Wolfram = TRUE)
 adjacencyOfClasses("gbutils", FALSE, "adjacencyMatrix", Wolfram = TRUE)
 adjacencyOfClasses("gbutils", TRUE,  "adjacencyMatrix", Wolfram = TRUE)
 
-## Run the following if these packages are installed:
-## adjacencyOfClasses("graph") # check another package
-## adjacencyOfClasses(c("graph", "Rgraphviz")) # more than one package
+if(requireNamespace("graph") && requireNamespace("Rgraphviz")) withAutoprint({
+    ## another package
+    adjacencyOfClasses("graph")
+    ac1 <- adjacencyOfClasses("graph", FALSE, "adjacencyMatrix")
+    gr_ac1 <- graph::graphAM(adjMat = ac1$AM, edgemode = "directed")
+    if(require("Rgraphviz"))
+        plot(gr_ac1)
+    ## more than one package
+    ac2 <- adjacencyOfClasses(c("graph", "Rgraphviz"), FALSE, "adjacencyMatrix")
+    gr_ac2 <- graph::graphAM(adjMat = ac2$AM, edgemode = "directed")
+    if(require("Rgraphviz"))
+        plot(gr_ac2)
+})
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
