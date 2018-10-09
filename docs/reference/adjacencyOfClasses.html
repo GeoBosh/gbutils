@@ -365,12 +365,13 @@ R package version 2.22.0.</p>
     <span class='co'>## another package</span>
     <span class='fu'>adjacencyOfClasses</span>(<span class='st'>"graph"</span>)
     <span class='no'>ac1</span> <span class='kw'>&lt;-</span> <span class='fu'>adjacencyOfClasses</span>(<span class='st'>"graph"</span>, <span class='fl'>FALSE</span>, <span class='st'>"adjacencyMatrix"</span>)
-    <span class='no'>gr_ac1</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>graph</span><span class='kw ns'>::</span><span class='fu'><a href='http://www.rdocumentation.org/packages/graph/topics/graphAM-class'>graphAM</a></span>(<span class='kw'>adjMat</span> <span class='kw'>=</span> <span class='no'>ac1</span>$<span class='no'>AM</span>, <span class='kw'>edgemode</span> <span class='kw'>=</span> <span class='st'>"directed"</span>)
+    <span class='co'>## note the use of t() below</span>
+    <span class='no'>gr_ac1</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>graph</span><span class='kw ns'>::</span><span class='fu'><a href='http://www.rdocumentation.org/packages/graph/topics/graphAM-class'>graphAM</a></span>(<span class='kw'>adjMat</span> <span class='kw'>=</span> <span class='fu'>t</span>(<span class='no'>ac1</span>$<span class='no'>AM</span>), <span class='kw'>edgemode</span> <span class='kw'>=</span> <span class='st'>"directed"</span>)
     <span class='kw'>if</span>(<span class='fu'>require</span>(<span class='st'>"Rgraphviz"</span>))
         <span class='fu'>plot</span>(<span class='no'>gr_ac1</span>)
     <span class='co'>## more than one package</span>
     <span class='no'>ac2</span> <span class='kw'>&lt;-</span> <span class='fu'>adjacencyOfClasses</span>(<span class='fu'>c</span>(<span class='st'>"graph"</span>, <span class='st'>"Rgraphviz"</span>), <span class='fl'>FALSE</span>, <span class='st'>"adjacencyMatrix"</span>)
-    <span class='no'>gr_ac2</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>graph</span><span class='kw ns'>::</span><span class='fu'><a href='http://www.rdocumentation.org/packages/graph/topics/graphAM-class'>graphAM</a></span>(<span class='kw'>adjMat</span> <span class='kw'>=</span> <span class='no'>ac2</span>$<span class='no'>AM</span>, <span class='kw'>edgemode</span> <span class='kw'>=</span> <span class='st'>"directed"</span>)
+    <span class='no'>gr_ac2</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>graph</span><span class='kw ns'>::</span><span class='fu'><a href='http://www.rdocumentation.org/packages/graph/topics/graphAM-class'>graphAM</a></span>(<span class='kw'>adjMat</span> <span class='kw'>=</span> <span class='fu'>t</span>(<span class='no'>ac2</span>$<span class='no'>AM</span>), <span class='kw'>edgemode</span> <span class='kw'>=</span> <span class='st'>"directed"</span>)
     <span class='kw'>if</span>(<span class='fu'>require</span>(<span class='st'>"Rgraphviz"</span>))
         <span class='fu'>plot</span>(<span class='no'>gr_ac2</span>)
 })</div><div class='output co'>#&gt; <span class='message'>Loading required namespace: graph</span></div><div class='output co'>#&gt; <span class='message'>Loading required namespace: Rgraphviz</span></div><div class='output co'>#&gt; &gt; adjacencyOfClasses("graph")
@@ -389,7 +390,7 @@ R package version 2.22.0.</p>
 #&gt; [11] "MGEdgeSet -&gt; UEdgeSet"  
 #&gt; 
 #&gt; &gt; ac1 &lt;- adjacencyOfClasses("graph", FALSE, "adjacencyMatrix")
-#&gt; &gt; gr_ac1 &lt;- graph::graphAM(adjMat = ac1$AM, edgemode = "directed")
+#&gt; &gt; gr_ac1 &lt;- graph::graphAM(adjMat = t(ac1$AM), edgemode = "directed")
 #&gt; &gt; if (require("Rgraphviz")) plot(gr_ac1)</div><div class='output co'>#&gt; <span class='message'>Loading required package: Rgraphviz</span></div><div class='output co'>#&gt; <span class='message'>Loading required package: graph</span></div><div class='output co'>#&gt; <span class='message'>Loading required package: BiocGenerics</span></div><div class='output co'>#&gt; <span class='message'>Loading required package: parallel</span></div><div class='output co'>#&gt; <span class='message'></span>
 #&gt; <span class='message'>Attaching package: 'BiocGenerics'</span></div><div class='output co'>#&gt; <span class='message'>The following objects are masked from 'package:parallel':</span>
 #&gt; <span class='message'></span>
@@ -406,7 +407,7 @@ R package version 2.22.0.</p>
 #&gt; <span class='message'>    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,</span>
 #&gt; <span class='message'>    rowSums, sapply, setdiff, sort, table, tapply, union, unique,</span>
 #&gt; <span class='message'>    unsplit, which, which.max, which.min</span></div><div class='output co'>#&gt; <span class='message'>Loading required package: grid</span></div><div class='img'><img src='adjacencyOfClasses-1.png' alt='' width='700' height='433' /></div><div class='output co'>#&gt; &gt; ac2 &lt;- adjacencyOfClasses(c("graph", "Rgraphviz"), FALSE, "adjacencyMatrix")
-#&gt; &gt; gr_ac2 &lt;- graph::graphAM(adjMat = ac2$AM, edgemode = "directed")
+#&gt; &gt; gr_ac2 &lt;- graph::graphAM(adjMat = t(ac2$AM), edgemode = "directed")
 #&gt; &gt; if (require("Rgraphviz")) plot(gr_ac2)</div><div class='img'><img src='adjacencyOfClasses-2.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
