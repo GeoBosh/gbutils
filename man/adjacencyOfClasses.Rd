@@ -162,12 +162,13 @@ if(requireNamespace("graph") && requireNamespace("Rgraphviz")) withAutoprint({
     ## another package
     adjacencyOfClasses("graph")
     ac1 <- adjacencyOfClasses("graph", FALSE, "adjacencyMatrix")
-    gr_ac1 <- graph::graphAM(adjMat = ac1$AM, edgemode = "directed")
+    ## note the use of t() below
+    gr_ac1 <- graph::graphAM(adjMat = t(ac1$AM), edgemode = "directed")
     if(require("Rgraphviz"))
         plot(gr_ac1)
     ## more than one package
     ac2 <- adjacencyOfClasses(c("graph", "Rgraphviz"), FALSE, "adjacencyMatrix")
-    gr_ac2 <- graph::graphAM(adjMat = ac2$AM, edgemode = "directed")
+    gr_ac2 <- graph::graphAM(adjMat = t(ac2$AM), edgemode = "directed")
     if(require("Rgraphviz"))
         plot(gr_ac2)
 })
