@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Get the command history — raw_history • gbutils</title>
+<title>Compute a pseudo-inverse matrix — pseudoInverse • gbutils</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -30,9 +30,10 @@
 
 
 
-<meta property="og:title" content="Get the command history — raw_history" />
+<meta property="og:title" content="Compute a pseudo-inverse matrix — pseudoInverse" />
 
-<meta property="og:description" content="Get the command history." />
+<meta property="og:description" content="Compute a pseudo-inverse matrix using singular value
+  decomposition and setting very small singular values to zero." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -101,38 +102,53 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Get the command history</h1>
+    <h1>Compute a pseudo-inverse matrix</h1>
     
-    <div class="hidden name"><code>raw_history.Rd</code></div>
+    <div class="hidden name"><code>pseudoInverse.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Get the command history.</p>
+    <p>Compute a pseudo-inverse matrix using singular value
+  decomposition and setting very small singular values to zero.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>raw_history</span>()</pre>
-        
+    <pre class="usage"><span class='fu'>pseudoInverse</span>(<span class='no'>a</span>, <span class='kw'>tol</span> <span class='kw'>=</span> <span class='fl'>1e-07</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>a</th>
+      <td><p>a matrix</p></td>
+    </tr>
+    <tr>
+      <th>tol</th>
+      <td><p>a number, the threshold for non-zero singular values.</p></td>
+    </tr>
+    </table>
+    
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>The command history is saved to a temporary file with
-  <code>savehistory</code> and read back into a character vector.</p>
+    
+    <p>The singular value decomposition of <code>a</code> is computed and singular
+  values smaller than <code>tol</code> are set to zero. The result is formed
+  using the standard formula.</p>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>a character vector</p>
+    <p>a matrix</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='co'># NOT RUN {</span>
-<span class='no'>hist</span> <span class='kw'>&lt;-</span> <span class='fu'>raw_history</span>()
-<span class='fu'>length</span>(<span class='no'>hist</span>)
-<span class='co'># }</span></pre>
+    <pre class="examples"><div class='input'>##---- Should be DIRECTLY executable !! ----
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#details">Details</a></li>
 
@@ -141,8 +157,6 @@
       <li><a href="#examples">Examples</a></li>
     </ul>
 
-    <h2>Author</h2>
-    Georgi N. Boshnakov
   </div>
 </div>
 
