@@ -24,3 +24,58 @@ library(devtools)
 install_github("GeoBosh/gbutils")
 #+END_EXAMPLE
 
+
+* Overview
+
+Package ~gbutils~ is a collection of (mostly small) functions used interactively
+or in packages.
+
+
+** Numeric computations
+
+- ~sim_numbers()~, ~sim_complex()~, ~sim_real()~ - Simulate real or complex
+  numbers from (possibly partial) polar form specifications.
+
+- ~cdf2quantile()~ - Compute quantiles from a given distribution function.
+
+- ~pseudoInverse()~ - Compute pseudo-inverse matrices.
+
+
+** Graphics
+
+- ~plotpdf()~ - Plot functions with automatic determination of the "interesting"
+  region (typically probability density and distribution functions)
+
+
+** S4 classes
+
+- ~adjacencyOfClasses()~ - Create inheritance graphs of S4 classes defined in
+  one or more packages. 
+
+	
+** Programming utilities
+
+- ~isNA()~ - Is an object NA?
+	
+- ~isargunnamed()~ - Is an element of a list named?
+	
+- ~missing_arg()~ - Is an element of a pairlist missing?
+
+- ~parse_text()~ - Parse expressions.
+	
+- ~nposargs()~ - Count the number of positional arguments used in a call.
+
+- ~shiftleft()~ ~shiftright()~ - Rotate vectors.
+
+
+** Other
+
+- ~mintersect()~ - Set intersection of arbitrary number of arguments.
+
+- ~myouter()~ - Outer product using a non-vectorised function. 
+	
+- ~raw_history()~ Get the command history in a character vector.
+
+  
+
+

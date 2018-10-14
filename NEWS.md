@@ -2,8 +2,6 @@
 
 * minor edits of the documentation of `adjacencyOfClasses()`.
 
-* in field Collate in DESCRIPTION, bundle all file names on a single lines to
-  enable building website with pkgdown (see pkgdown issue #836).
 
 # gbutils 0.4-0 (CRAN)
 

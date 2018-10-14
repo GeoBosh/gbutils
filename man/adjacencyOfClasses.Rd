@@ -83,9 +83,9 @@ adjacencyOfClasses(packages, externalSubclasses = FALSE,
 
   \printExample{adjacencyOfClasses("gbutils", result = "adjacencyMatrix")}
   
-  Note that inluding the vertices in the result is not redundant, since
+  Note that including the vertices in the result is not redundant, since
   some may not be in any edge. This can happen if a class does not
-  haved any superclasses and subclasses.
+  have any superclasses and subclasses.
   
   As described above the result is not converted to a graph object but
   it can be fed to functions provided by a number of \R packages. 
@@ -158,18 +158,19 @@ adjacencyOfClasses("gbutils", TRUE, Wolfram = TRUE)
 adjacencyOfClasses("gbutils", FALSE, "adjacencyMatrix", Wolfram = TRUE)
 adjacencyOfClasses("gbutils", TRUE,  "adjacencyMatrix", Wolfram = TRUE)
 
-if(requireNamespace("graph") && requireNamespace("Rgraphviz")) withAutoprint({
+if(requireNamespace("graph", quietly = TRUE) &&
+   requireNamespace("Rgraphviz", quietly = TRUE)) withAutoprint({
     ## another package
     adjacencyOfClasses("graph")
     ac1 <- adjacencyOfClasses("graph", FALSE, "adjacencyMatrix")
     ## note the use of t() below
     gr_ac1 <- graph::graphAM(adjMat = t(ac1$AM), edgemode = "directed")
-    if(require("Rgraphviz"))
+    if(require("Rgraphviz", quietly = TRUE, warn.conflicts = FALSE))
         plot(gr_ac1)
     ## more than one package
     ac2 <- adjacencyOfClasses(c("graph", "Rgraphviz"), FALSE, "adjacencyMatrix")
     gr_ac2 <- graph::graphAM(adjMat = t(ac2$AM), edgemode = "directed")
-    if(require("Rgraphviz"))
+    if(require("Rgraphviz", quietly = TRUE))
         plot(gr_ac2)
 })
 }
