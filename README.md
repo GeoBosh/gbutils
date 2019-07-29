@@ -10,7 +10,7 @@ compute the graph of S4 classes in packages.
 
 The [latest stable version](https://cran.r-project.org/package=gbutils) is on CRAN. 
 
-    install_packages("gbutils")
+    install.packages("gbutils")
 
 You can install the [development version](https://github.com/GeoBosh/gbutils) of `gbutils` from Github:
 

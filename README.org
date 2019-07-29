@@ -12,7 +12,7 @@ compute the graph of S4 classes in packages.
 
 The [[https://cran.r-project.org/package=gbutils][latest stable version]] is on CRAN. 
 #+BEGIN_EXAMPLE
-install_packages("gbutils")
+install.packages("gbutils")
 #+END_EXAMPLE
 # The vignette shipping with the package gives illustrative examples.
 # =vignette("Guide_gbutils", package = "gbutils")=.
