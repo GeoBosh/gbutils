@@ -1,3 +1,5 @@
+[![CRANStatusBadge](http://www.r-pkg.org/badges/version/gbutils)](https://cran.r-project.org/package=gbutils)
+
 Simulate real and complex numbers from distributions of their magnitude and
 arguments. Optionally, the magnitudes and/or arguments may be fixed in almost arbitrary
 ways. Plot density and distribution functions with automatic selection of suitable regions.

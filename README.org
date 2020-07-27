@@ -1,5 +1,10 @@
 #+PROPERTY: header-args:R   :cache yes :session readme-r :results value :exports both
 #+OPTIONS: toc:nil
+#+TITLE: Utilities for Simulation, Plots, Quantile Functions and Programming
+
+#+BEGIN_EXPORT html
+[![CRANStatusBadge](http://www.r-pkg.org/badges/version/gbutils)](https://cran.r-project.org/package=gbutils)
+#+END_EXPORT
 
 Simulate real and complex numbers from distributions of their magnitude and
 arguments. Optionally, the magnitudes and/or arguments may be fixed in almost arbitrary
@@ -77,5 +82,6 @@ or in packages.
 - ~raw_history()~ Get the command history in a character vector.
 
   
+
 
 
