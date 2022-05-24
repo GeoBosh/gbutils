@@ -38,7 +38,6 @@ jobs:
 
       - name: Install additional LaTeX packages
         run: |
-	  tlmgr install 
           tlmgr search --file --global "/ae.sty"
           tlmgr install ae
           tlmgr install grfext
