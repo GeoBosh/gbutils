@@ -1,6 +1,9 @@
+<!-- badges: start -->
 [![CRANStatusBadge](http://www.r-pkg.org/badges/version/gbutils)](https://cran.r-project.org/package=gbutils)
 [![CRAN RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/gbutils)](https://www.r-pkg.org/pkg/gbutils)
 [![CRAN RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/gbutils?color=blue)](https://r-pkg.org/pkg/gbutils)
+[![R-CMD-check](https://github.com/GeoBosh/gbutils/workflows/R-CMD-check/badge.svg)](https://github.com/GeoBosh/gbutils/actions)
+<!-- badges: end -->
 
 Simulate real and complex numbers from distributions of their magnitude and
 arguments. Optionally, the magnitudes and/or arguments may be fixed in almost arbitrary
