@@ -181,7 +181,7 @@ Simulate real and complex numbers from polar form specifications. The
 <span class="r-in"><span class="co">## (maybe to specify a cubic polynomial through its roots)</span></span>
 <span class="r-in"><span class="fu">sim_numbers</span><span class="op">(</span>type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"r"</span>, <span class="st">"cp"</span><span class="op">)</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $values</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.3997479+0.0000000i 0.4477973+0.6191156i</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.03076618+0.0000000i  0.02836871+0.5896719i</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $type</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "r"  "cp"</span>
@@ -190,7 +190,7 @@ Simulate real and complex numbers from polar form specifications. The
 <span class="r-in"><span class="co">## here the real value is fixed to have modulus 1, leaving the sign unspecified</span></span>
 <span class="r-in"><span class="fu">sim_numbers</span><span class="op">(</span>type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"r"</span>, <span class="st">"cp"</span><span class="op">)</span>, abs <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="cn">NA</span><span class="op">)</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $values</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -1.0000000+0.0000000i  0.2181907-0.6177696i</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1]  1.0000000+0.0000000i -0.4601866+0.6112059i</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $type</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "r"  "cp"</span>
@@ -200,7 +200,7 @@ Simulate real and complex numbers from polar form specifications. The
 <span class="r-in"><span class="co">##     the complex pair has argument  +-pi/2, and free modulus:</span></span>
 <span class="r-in"><span class="fu">sim_numbers</span><span class="op">(</span>type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"r"</span>, <span class="st">"cp"</span><span class="op">)</span>, abs <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="cn">NA</span><span class="op">)</span>, sign <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="va">pi</span><span class="op">/</span><span class="fl">2</span><span class="op">)</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $values</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -1+0.0000000i  0+0.1942354i</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -1+0.0000000i  0+0.6119545i</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $type</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "r"  "cp"</span>
@@ -211,14 +211,14 @@ Simulate real and complex numbers from polar form specifications. The
 <span class="r-in"><span class="co">## here the the third value is fixed:</span></span>
 <span class="r-in"><span class="fu">sim_numbers</span><span class="op">(</span>type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"r"</span>, <span class="st">"cp"</span>, <span class="st">"r"</span><span class="op">)</span>, values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="cn">NA</span>,<span class="cn">NA</span>,<span class="fl">3</span><span class="op">)</span><span class="op">)</span>  <span class="co"># type[3] = "r"</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $values</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.5733326+0.0000000i -0.3380178+0.0481446i  3.0000000+0.0000000i</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.8519460+0.0000000i -0.5141556-0.1360226i  3.0000000+0.0000000i</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $type</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "r"  "cp" "r" </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span class="fu">sim_numbers</span><span class="op">(</span>type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"r"</span>, <span class="st">"cp"</span>, <span class="st">"cp"</span><span class="op">)</span>, values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="cn">NA</span>,<span class="cn">NA</span>,<span class="fl">3i</span><span class="op">)</span><span class="op">)</span> <span class="co"># type[3] = "cp"</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $values</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1]  0.0856794+0.0000000i -0.2310438+0.3359548i  0.0000000+3.0000000i</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1]  0.8423285+0.0000000i -0.3823250+0.3688311i  0.0000000+3.0000000i</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $type</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "r"  "cp" "cp"</span>
@@ -227,14 +227,14 @@ Simulate real and complex numbers from polar form specifications. The
 <span class="r-in"><span class="co">## type[3] can be left NA since it can be inferred from values[3]:</span></span>
 <span class="r-in"><span class="fu">sim_numbers</span><span class="op">(</span>type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"r"</span>, <span class="st">"cp"</span>, <span class="cn">NA</span><span class="op">)</span>, values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="cn">NA</span>,<span class="cn">NA</span>,<span class="fl">3</span><span class="op">)</span><span class="op">)</span>  <span class="co"># type[3] = "r"</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $values</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.1487092+0.0000000i -0.2644657-0.4072571i  3.0000000+0.0000000i</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.8877619+0.0000000i -0.3395933-0.6431569i  3.0000000+0.0000000i</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $type</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "r"  "cp" "r" </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span class="fu">sim_numbers</span><span class="op">(</span>type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"r"</span>, <span class="st">"cp"</span>, <span class="cn">NA</span><span class="op">)</span>, values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="cn">NA</span>,<span class="cn">NA</span>,<span class="fl">3i</span><span class="op">)</span><span class="op">)</span> <span class="co"># type[3] = "cp"</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $values</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.4056336+0.000000i -0.1393233-0.288598i  0.0000000+3.000000i</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1]  0.9676391+0.0000000i -0.1784647+0.2345125i  0.0000000+3.0000000i</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $type</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "r"  "cp" "cp"</span>
@@ -249,8 +249,8 @@ Simulate real and complex numbers from polar form specifications. The
 <span class="r-in"><span class="co">## simulate 10 reals with the default generators</span></span>
 <span class="r-in"><span class="fu">sim_numbers</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="st">"r"</span>, <span class="fl">10</span><span class="op">)</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $values</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1]  0.28469826  0.43686156 -0.84384209 -0.27327973  0.90904304 -0.43749756</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [7]  0.95851735  0.34161335  0.03540758 -0.93610058</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] -0.1594390  0.8607301 -0.6835714 -0.5649880  0.2021570 -0.5407038</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [7]  0.8023726 -0.2021133  0.1193471 -0.8386045</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $type</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "r" "r" "r" "r" "r" "r" "r" "r" "r" "r"</span>
@@ -261,7 +261,7 @@ Simulate real and complex numbers from polar form specifications. The
 <span class="r-in"><span class="va">rR</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">n</span>, <span class="va">sigma</span> <span class="op">=</span> <span class="fl">1</span><span class="op">)</span> <span class="va">sigma</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/base/MathFun.html" class="external-link">sqrt</a></span><span class="op">(</span><span class="op">-</span><span class="fl">2</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html" class="external-link">runif</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
 <span class="r-in"><span class="fu">sim_numbers</span><span class="op">(</span>type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"cp"</span>, <span class="st">"cp"</span><span class="op">)</span>, absgen <span class="op">=</span> <span class="va">rR</span>, absarg <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $values</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.197485+1.356946i 1.344178+0.475256i</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.5169522+0.7736486i -0.9387014+0.2757952i</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $type</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "cp" "cp"</span>
