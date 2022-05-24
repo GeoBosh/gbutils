@@ -1,6 +1,6 @@
 \name{rpoly}
 \alias{rpoly}
-\title{Polynomial with real coefficients}
+\title{Polynomials with real coefficients}
 \description{
 
   Compute the coefficients of a polynomial with real coefficients, given
