@@ -30,8 +30,9 @@ export(
     cdf2quantile,
     plotpdf,
     adjacencyOfClasses,
-    pseudoInverse
-    )
+    pseudoInverse,
+    rpoly
+)
 
 
 

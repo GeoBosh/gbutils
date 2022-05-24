@@ -31,7 +31,7 @@ sim_numbers(type = rep(as.character(NA), length(abs)),
   some of the numbers or one of their polar parts.
   The length of the simulated vector is inferred from the length of
   \code{type} or \code{abs}, so one of them must be
-  provided. \code{sim_numbers} as a flexible front-end for
+  provided. \code{sim_numbers} is a flexible front-end for
   \code{sim_real} and \code{sim_complex}.
 
   \code{sim_numbers} generates a vector of values with types specified

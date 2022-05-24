@@ -1,4 +1,6 @@
 [![CRANStatusBadge](http://www.r-pkg.org/badges/version/gbutils)](https://cran.r-project.org/package=gbutils)
+[![CRAN RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/gbutils)](https://www.r-pkg.org/pkg/gbutils)
+[![CRAN RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/gbutils?color=blue)](https://r-pkg.org/pkg/gbutils)
 
 Simulate real and complex numbers from distributions of their magnitude and
 arguments. Optionally, the magnitudes and/or arguments may be fixed in almost arbitrary
@@ -34,6 +36,9 @@ or in packages.
 -   `cdf2quantile()` - Compute quantiles from a given distribution function.
 
 -   `pseudoInverse()` - Compute pseudo-inverse matrices.
+
+-   `rpoly()` - create polynomials with real coefficients from zeroes (roots) given in
+    Cartesian or polar form.
 
 
 ## Graphics

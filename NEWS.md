@@ -1,4 +1,7 @@
-# gbutils 0.4-1
+# gbutils 0.4.0.9000
+
+* new function `rpoly()` creates polynomials with real coefficients from their
+  zeroes (roots) given in Cartesian or polar form.
 
 * minor edits of the documentation of `adjacencyOfClasses()`.
 

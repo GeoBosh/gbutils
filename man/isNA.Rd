@@ -13,16 +13,25 @@ isNA(x)
 }
 \details{
 
-  \code{isNA} returns TRUE if the argument is a single NA, i.e. it has
-  length one and represents an NA value. In any other case \code{isNA}
-  returns FALSE.
+  \code{isNA} returns TRUE if the argument is a single NA, i.e. it is
+  atomic, has length one, and represents an NA value. In any other case
+  \code{isNA} returns \code{FALSE}. 
 
   \code{isNA} is suitable for use in conditional constructs since it
   always returns a single value which is never NA.
 
-  Note that \code{identical()} distinguishes different types
-  of NA, i.e. \code{identical(x, NA)} is TRUE only if \code{x} is NA
-  (logical). 
+  Note that \code{identical()} distinguishes different types of NA,
+  i.e. \code{identical(x, NA)} is TRUE only if \code{x} is NA (logical).
+
+}
+\note{
+
+  The requirement that \code{x} is atomic means that
+  \code{isNA(list(NA))} gives \code{FALSE}.
+
+  For comparison, \code{is.na(list(NA))} gives \code{TRUE}.  The same
+  holds for classed lists, such as \code{is.na(structure(list(NA), class
+  = "myclass"))}.
 
 }
 \value{
@@ -35,6 +44,14 @@ isNA(x)
 \examples{
 v <- c(1, NA, 3)
 isNA(v[2]) # TRUE
+
+## a vector of two or more Na's is not isNA
+isNA(rep(NA,3)) # FALSE
+
+## a list containing NA is not isNA
+isNA(list(NA)) # FALSE
+## ... but
+is.na(list(NA))  # TRUE
 
 ## identical() distinguishes different types of NA:
 class(v) # "numeric", not "integer"
