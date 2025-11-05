@@ -1,69 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://geobosh.github.io/gbutils/404.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/index.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/adjacencyOfClasses.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/cdf2quantile.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/isNA.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/isargunnamed.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/mintersect.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/missing_arg.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/myouter.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/nposargs.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/objectPad-class.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/pad-methods.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/parse_text.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/plotpdf.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/pseudoInverse.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/raw_history.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/rpoly.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/sim_complex.html</loc>
-  </url>
-  <url>
-    <loc>https://geobosh.github.io/gbutils/reference/sim_numbers.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://geobosh.github.io/gbutils/404.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/authors.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/index.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/news/index.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/adjacencyOfClasses.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/cdf2quantile.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/index.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/isNA.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/isargunnamed.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/mintersect.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/missing_arg.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/myouter.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/nposargs.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/objectPad-class.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/pad-methods.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/parse_text.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/plotpdf.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/pseudoInverse.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/raw_history.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/rpoly.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/sim_complex.html</loc></url>
+<url><loc>https://geobosh.github.io/gbutils/reference/sim_numbers.html</loc></url>
 </urlset>
+
