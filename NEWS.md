@@ -1,4 +1,4 @@
-# gbutils 0.4.0.9000
+# gbutils 0.5
 
 * new function `rpoly()` creates polynomials with real coefficients from their
   zeroes (roots) given in Cartesian or polar form.
